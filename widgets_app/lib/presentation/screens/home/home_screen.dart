@@ -42,12 +42,15 @@ class _CustomListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     return ListTile(
-      leading: Icon(menuItem.icon, color: colors.primary,),
+      leading: Icon(
+        menuItem.icon,
+        color: colors.primary,
+      ),
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subtitle),
-      onTap: (){
-        //TODO: navegar a otra pantalla
+      onTap: () {
+        Navigator.pushNamed(context, menuItem.url);
       },
     );
   }

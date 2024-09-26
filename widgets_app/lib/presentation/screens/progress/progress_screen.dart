@@ -53,7 +53,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
       }).takeWhile(
           (value) => value <= 1),// takewhile permite que se acabe el periodic
       builder: (context, snapshot) {
-        final progressValue = snapshot.data ?? 0;
+        final progressValue = snapshot.data ?? 0; //snapshot data es el valor del stream actual
 
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),

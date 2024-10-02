@@ -54,4 +54,15 @@ const appMenuItems = <MenuItem>[
         subtitle: 'Imagenes infinitas y pull to refresh',
         url: '/infinite',
         icon: Icons.image_rounded),
+    MenuItem(
+        title: 'Counter Screen',
+        subtitle: 'Counter screen con riverpod',
+        url: '/counter',
+        icon: Icons.plus_one_rounded),
+    MenuItem(
+        title: 'Cambiar color de tema',
+        subtitle: 'Cambia el color del tema',
+        url: '/theme',
+        icon: Icons.palette_rounded),
+
   ];

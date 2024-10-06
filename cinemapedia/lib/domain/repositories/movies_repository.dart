@@ -3,7 +3,7 @@ import 'package:cinemapedia/domain/entities/movie.dart';
 //Como se diferencian?
 //Los repositorios llaman los datasoruces.
 
-abstract class MovieRepository {
+abstract class MoviesRepository {
   
   Future<List<Movie>> getNowPlaying({int page= 1});
 
